@@ -73,5 +73,8 @@ else
   pprintWarn "git already installed"
 fi
 
+rm -rf "${TEMPDIR}"
+rm "${TEMPFILE}"
+
 pprintSuccess "developer environment setup complete!"
 pprintWarn "please close this shell and open a new one to continue development"
